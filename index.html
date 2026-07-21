@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Danyel Tatlıcı — Saç Tasarım &amp; Mikro Kaynak Uzmanı</title>
+<meta name="description" content="Danyel Tatlıcı Hairdresser — saç tasarımı, mikro kaynak, renklendirme, balayaj ve temiz sarılar. Rezervasyon için WhatsApp: 0548 887 57 47." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Danyel Tatlıcı — Saç Tasarım &amp; Mikro Kaynak Uzmanı" />
+<meta property="og:description" content="Mikro kaynak, renklendirme, balayaj ve temiz sarılar. 173B+ takipçinin güvendiği isim. Rezervasyon: 0548 887 57 47." />
+<meta property="og:image" content="https://gracoins.github.io/danyel-hair/img/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://gracoins.github.io/danyel-hair/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0d0d0d;
+    --ink-2:#161616;
+    --paper:#ffffff;
+    --off:#f5f3f0;
+    --champagne:#c0a274;
+    --champagne-lt:#ded0b8;
+    --muted:#7e7a75;
+    --line:#e6e2dc;
+    --ease:cubic-bezier(.19,1,.22,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Figtree',sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--champagne);color:#fff}
+  h1,h2,h3,h4{font-family:'Prata',serif;font-weight:400;line-height:1.08;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+  .eyebrow{font-size:.68rem;letter-spacing:.36em;text-transform:uppercase;color:var(--champagne);font-weight:700;display:inline-flex;align-items:center;gap:12px}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--champagne)}
+  .center .eyebrow{justify-content:center}.center .eyebrow::after{content:"";width:26px;height:1px;background:var(--champagne)}
+
+  header{position:fixed;inset:0 0 auto;z-index:50;transition:.5s var(--ease);padding:20px 0;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom-color:var(--line);padding:12px 0}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:22px}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand b{font-family:'Prata',serif;font-weight:400;font-size:1.3rem;letter-spacing:.06em}
+  .brand i{font-style:normal;font-size:.5rem;letter-spacing:.4em;color:var(--champagne);font-weight:700;margin-top:5px;text-transform:uppercase}
+  nav ul{display:flex;gap:30px;list-style:none}
+  nav ul a{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;position:relative;transition:.3s}
+  nav ul a::after{content:"";position:absolute;left:0;bottom:-5px;height:1px;width:0;background:var(--champagne);transition:.35s var(--ease)}
+  nav ul a:hover{color:var(--ink)}nav ul a:hover::after{width:100%}
+  .navright{display:flex;align-items:center;gap:14px}
+  .lang{display:inline-flex;border:1px solid var(--line);overflow:hidden}
+  .langbtn{background:none;border:0;color:var(--muted);font-family:'Figtree',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.1em;padding:7px 12px;cursor:pointer;transition:.3s}
+  .langbtn.on{background:var(--ink);color:#fff}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:14px 28px;cursor:pointer;transition:.4s var(--ease)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:var(--champagne);transform:translateY(-2px)}
+  .btn-champ{background:var(--champagne);color:#fff}
+  .btn-champ:hover{background:#a98c60;transform:translateY(-2px)}
+  .btn-line{border:1px solid var(--ink);color:var(--ink)}
+  .btn-line:hover{background:var(--ink);color:#fff}
+  .btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff}
+  .btn-ghost:hover{background:#fff;color:var(--ink)}
+  .navtoggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+  /* hero */
+  .hero{padding:150px 0 80px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-140px;right:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(192,162,116,.16),transparent 70%);z-index:-1}
+  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.9rem,6.6vw,5.2rem);margin:20px 0 0}
+  .hero h1 em{font-style:italic;color:var(--champagne)}
+  .hero .sub{font-size:1.1rem;color:var(--muted);max-width:440px;margin:24px 0 34px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-stats{display:flex;gap:34px;margin-top:44px;flex-wrap:wrap}
+  .hero-stats div{border-left:1px solid var(--line);padding-left:16px}
+  .hero-stats b{font-family:'Prata',serif;font-size:1.8rem;display:block;line-height:1.1}
+  .hero-stats span{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .hero-figure{position:relative}
+  .hero-figure .ph{aspect-ratio:4/5;overflow:hidden;background:linear-gradient(150deg,#e9e3d9,#f5f3f0 55%,#ded0b8);position:relative;display:grid;place-items:center}
+  .hero-figure .ph img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .hero-figure .ph .mono{font-family:'Prata',serif;font-size:3.4rem;color:rgba(13,13,13,.16);letter-spacing:.1em;text-align:center;padding:0 20px}
+  .hero-figure .tag{position:absolute;left:-16px;bottom:36px;background:var(--ink);color:#fff;padding:15px 24px}
+  .hero-figure .tag b{font-family:'Prata',serif;font-size:1.25rem;display:block;line-height:1}
+  .hero-figure .tag span{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--champagne-lt)}
+
+  .marquee{background:var(--ink);color:#fff;padding:16px 0;overflow:hidden;white-space:nowrap}
+  .marquee .track{display:inline-block;animation:scroll 28s linear infinite}
+  .marquee span{font-family:'Prata',serif;font-size:1.4rem;margin:0 22px}
+  .marquee span::after{content:"✦";color:var(--champagne);margin-left:44px;font-size:.8rem}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  section{position:relative}
+  .pad{padding:104px 0}
+  .center{text-align:center}
+  .stitle{font-size:clamp(2.3rem,5vw,3.6rem);margin:16px 0}
+  .stitle em{font-style:italic;color:var(--champagne)}
+  .lede{color:var(--muted);max-width:620px;margin:0 auto;font-size:1.05rem}
+
+  /* services */
+  .serv{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-top:56px}
+  .scard{background:var(--paper);padding:44px 34px;transition:.5s var(--ease);position:relative;overflow:hidden}
+  .scard::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--champagne);transition:.5s var(--ease)}
+  .scard:hover{background:var(--off)}
+  .scard:hover::before{width:100%}
+  .scard .no{font-family:'Prata',serif;font-size:.9rem;color:var(--champagne);letter-spacing:.1em}
+  .scard h3{font-size:1.55rem;margin:12px 0 8px}
+  .scard p{color:var(--muted);font-size:.94rem}
+
+  /* signature */
+  .sig{background:var(--ink);color:#fff;text-align:center}
+  .sig .eyebrow{color:var(--champagne)}.sig .eyebrow::before,.sig .eyebrow::after{background:var(--champagne)}
+  .sig h2{font-size:clamp(2.6rem,6vw,4.6rem);margin:18px 0}
+  .sig h2 em{font-style:italic;color:var(--champagne)}
+  .sig p{color:rgba(255,255,255,.72);max-width:560px;margin:0 auto 30px}
+  .sig .tags{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .sig .tags span{border:1px solid rgba(255,255,255,.24);padding:10px 22px;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+
+  /* dubai */
+  .dubai{background:var(--off)}
+  .dubai-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .dubai .badge{display:inline-flex;align-items:center;gap:10px;background:var(--champagne);color:#fff;padding:9px 20px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+  .dubai h2{font-size:clamp(2.2rem,4.6vw,3.4rem);margin:18px 0}
+  .dubai h2 em{font-style:italic;color:var(--champagne)}
+  .dubai p{color:var(--muted);margin-bottom:16px}
+  .dubai .panel{aspect-ratio:4/3;background:linear-gradient(150deg,var(--ink),#2a2a2a);display:grid;place-items:center;text-align:center;color:#fff;padding:30px}
+  .dubai .panel .flag{font-size:3rem;margin-bottom:10px}
+  .dubai .panel b{font-family:'Prata',serif;font-size:1.9rem;display:block}
+  .dubai .panel span{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--champagne-lt);margin-top:6px;display:block}
+
+  /* instagram */
+  .ig-wrap{text-align:center}
+  .ig-wrap .big{font-family:'Prata',serif;font-size:clamp(3.4rem,9vw,6.4rem);line-height:1;margin:10px 0}
+  .ig-wrap .big span{color:var(--champagne)}
+
+  /* contact */
+  .cgrid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-top:56px;background:var(--off)}
+  .cinfo{padding:56px 50px;display:flex;flex-direction:column;gap:24px}
+  .cinfo .row{display:flex;gap:16px;align-items:flex-start}
+  .cinfo .row .k{width:42px;height:42px;background:var(--ink);color:#fff;display:grid;place-items:center;flex:none}
+  .cinfo .row .k svg{width:19px;height:19px}
+  .cinfo .row b{display:block;font-family:'Prata',serif;font-size:1.2rem}
+  .cinfo .row span{color:var(--muted);font-size:.92rem}
+  .cinfo .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+  .cside{background:var(--ink);color:#fff;padding:56px 50px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+  .cside .mono{font-family:'Prata',serif;font-size:2.4rem;line-height:1.15}
+  .cside .mono em{font-style:italic;color:var(--champagne)}
+  .cside p{color:rgba(255,255,255,.7);margin:16px 0 26px;font-size:.95rem}
+
+  footer{padding:56px 0 34px;text-align:center;border-top:1px solid var(--line)}
+  footer .brand{align-items:center;margin-bottom:16px}
+  footer .fnav{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin:14px 0 20px}
+  footer .fnav a{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:.3s}
+  footer .fnav a:hover{color:var(--champagne)}
+  footer small{color:#a8a49f;font-size:.74rem}
+
+  .wa{position:fixed;right:22px;bottom:22px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:.3s}
+  .wa:hover{transform:scale(1.08)}.wa svg{width:29px;height:29px;fill:#fff}
+
+  .reveal{opacity:0;transform:translateY(30px);transition:1s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+
+  @media(max-width:920px){
+    nav ul,.nav .btn.desk{display:none}
+    .navtoggle{display:block}
+    .hero-grid,.dubai-in,.cgrid{grid-template-columns:1fr;gap:44px}
+    .serv{grid-template-columns:1fr 1fr}
+    .pad{padding:70px 0}
+    nav.open ul{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(255,255,255,.98);backdrop-filter:blur(12px);padding:24px;gap:18px;border-top:1px solid var(--line)}
+  }
+  @media(max-width:560px){.serv{grid-template-columns:1fr}.wrap{padding:0 20px}.hero-figure .tag{left:14px}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="head">
+  <div class="wrap"><div class="nav">
+    <a class="brand" href="#top"><b>DANYEL TATLICI</b><i>Hairdresser</i></a>
+    <nav id="nav"><ul>
+      <li><a href="#services" data-en="Services">Hizmetler</a></li>
+      <li><a href="#signature" data-en="Signature">İmza</a></li>
+      <li><a href="#dubai">Dubai</a></li>
+      <li><a href="#contact" data-en="Booking">Rezervasyon</a></li>
+    </ul></nav>
+    <div class="navright">
+      <div class="lang"><button class="langbtn on" data-l="tr">TR</button><button class="langbtn" data-l="en">EN</button></div>
+      <a class="btn btn-dark desk" href="https://wa.me/905488875747" target="_blank" rel="noopener" data-en="Book Now">Randevu Al</a>
+    </div>
+    <button class="navtoggle" id="navtoggle" aria-label="Menü">☰</button>
+  </div></div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow reveal in" data-en="Hair Design &amp; Micro Extension Specialist">Saç Tasarım &amp; Mikro Kaynak Uzmanı</span>
+      <h1 class="reveal in d1" data-en="Hair that<em> turns heads.</em>">Saçınız,<em> imzanız olsun.</em></h1>
+      <p class="sub reveal in d2" data-en="Micro-link extensions, colour, balayage and clean blondes — crafted with an expert hand and an eye for detail.">Mikro kaynak, renklendirme, balayaj ve tertemiz sarılar — uzman bir el ve detaya takıntılı bir gözle.</p>
+      <div class="hero-cta reveal in d2">
+        <a class="btn btn-champ" href="https://wa.me/905488875747" target="_blank" rel="noopener" data-en="Book on WhatsApp">WhatsApp'tan Randevu</a>
+        <a class="btn btn-line" href="#services" data-en="Our Services">Hizmetlerimiz</a>
+      </div>
+      <div class="hero-stats reveal in d3">
+        <div><b>173B+</b><span data-en="Followers">Takipçi</span></div>
+        <div><b>1.400+</b><span data-en="Transformations">Dönüşüm</span></div>
+        <div><b data-en="Micro Link">Mikro</b><span data-en="Extension expert">Kaynak Uzmanı</span></div>
+      </div>
+    </div>
+    <div class="hero-figure reveal in d1">
+      <div class="ph"><span class="mono">DANYEL<br>TATLICI</span><img src="img/hero.jpg" alt="Danyel Tatlıcı" onerror="this.remove()"></div>
+      <div class="tag"><span data-en="Specialist">Uzmanlık</span><b data-en="Micro Link">Mikro Kaynak</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="track">
+  <span data-en="Micro Link">Mikro Kaynak</span><span data-en="Balayage">Balayaj</span><span data-en="Colour">Renklendirme</span><span data-en="Clean Blondes">Temiz Sarılar</span><span data-en="Hair Design">Saç Tasarımı</span><span data-en="Micro Link">Mikro Kaynak</span><span data-en="Balayage">Balayaj</span><span data-en="Colour">Renklendirme</span><span data-en="Clean Blondes">Temiz Sarılar</span><span data-en="Hair Design">Saç Tasarımı</span>
+</div></div>
+
+<!-- SERVICES -->
+<section class="pad" id="services">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal" data-en="Our Services">Hizmetlerimiz</span>
+      <h2 class="stitle reveal d1" data-en="Crafted for <em>your hair</em>">Saçınıza <em>özel</em></h2>
+      <p class="lede reveal d2" data-en="Every service begins with a consultation — because the right result starts with understanding your hair.">Her hizmet bir danışmayla başlar — çünkü doğru sonuç, saçınızı anlamakla başlar.</p>
+    </div>
+    <div class="serv reveal d1">
+      <div class="scard"><div class="no">01</div><h3 data-en="Micro Link Extensions">Mikro Kaynak</h3><p data-en="Seamless, natural-looking length and volume with expert micro-link application.">Uzman mikro kaynak uygulamasıyla fark edilmeyen, doğal uzunluk ve hacim.</p></div>
+      <div class="scard"><div class="no">02</div><h3 data-en="Hair Design &amp; Cut">Saç Tasarımı &amp; Kesim</h3><p data-en="A cut shaped around your face, hair type and daily life.">Yüzünüze, saç tipinize ve günlük hayatınıza göre şekillenen kesim.</p></div>
+      <div class="scard"><div class="no">03</div><h3 data-en="Colour">Renklendirme</h3><p data-en="Rich, dimensional colour applied with precision and care for hair health.">Saç sağlığını gözeten, derinlikli ve kusursuz renk uygulaması.</p></div>
+      <div class="scard"><div class="no">04</div><h3 data-en="Balayage &amp; Ombré">Balayaj &amp; Ombre</h3><p data-en="Soft, sun-kissed transitions that grow out beautifully.">Yumuşak, güneş öpücüğü geçişler — uzadıkça da güzel duran.</p></div>
+      <div class="scard"><div class="no">05</div><h3 data-en="Clean Blondes">Temiz Sarılar</h3><p data-en="The signature: bright, clean blonde tones without brassiness.">İmza hizmet: turuncuya kaçmayan, parlak ve tertemiz sarı tonlar.</p></div>
+      <div class="scard"><div class="no">06</div><h3 data-en="Care &amp; Treatments">Bakım &amp; Onarım</h3><p data-en="Professional treatments that keep colour vivid and hair strong.">Rengi canlı, saçı güçlü tutan profesyonel bakım uygulamaları.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE -->
+<section class="sig pad" id="signature">
+  <div class="wrap">
+    <span class="eyebrow reveal">#temizsarılar</span>
+    <h2 class="reveal d1" data-en="The <em>clean blonde</em> signature">İmza: <em>temiz sarılar</em></h2>
+    <p class="reveal d2" data-en="Blonde is the hardest colour to get right — and the easiest to get wrong. Years of specialisation, thousands of transformations, and a standard that never settles for brassy.">Sarı, doğru yapılması en zor renktir — yanlış yapılması ise en kolay. Yılların uzmanlığı, binlerce dönüşüm ve turuncuya asla razı olmayan bir standart.</p>
+    <div class="tags reveal d2">
+      <span data-en="Balayage">Balayaj</span><span data-en="Ombré">Ombre</span><span data-en="Platinum">Platin</span><span data-en="Honey">Bal Sarısı</span><span data-en="Toning">Tonlama</span>
+    </div>
+    <div style="margin-top:34px" class="reveal d3"><a class="btn btn-champ" href="https://wa.me/905488875747" target="_blank" rel="noopener" data-en="Book a Consultation">Danışma Randevusu Al</a></div>
+  </div>
+</section>
+
+<!-- DUBAI -->
+<section class="dubai pad" id="dubai">
+  <div class="wrap dubai-in">
+    <div>
+      <span class="badge reveal">🇦🇪 <span data-en="Opening Soon">Çok Yakında</span></span>
+      <h2 class="reveal d1" data-en="Danyel Tatlıcı,<em> now in Dubai.</em>">Danyel Tatlıcı,<em> şimdi Dubai'de.</em></h2>
+      <p class="reveal d1" data-en="The same hands, the same standard — soon in Dubai. Follow us on Instagram to be the first to know when doors open.">Aynı eller, aynı standart — çok yakında Dubai'de. Kapılar açıldığında ilk siz haberdar olun, Instagram'dan takipte kalın.</p>
+      <div class="reveal d2" style="margin-top:24px"><a class="btn btn-line" href="https://instagram.com/danyeltatlici__hairdresser" target="_blank" rel="noopener" data-en="Follow for updates">Takipte Kalın</a></div>
+    </div>
+    <div class="panel reveal d1">
+      <div>
+        <div class="flag">🇦🇪</div>
+        <b>DUBAI</b>
+        <span data-en="Opening Soon">Çok Yakında</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="pad ig-wrap">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="justify-content:center">Instagram</span>
+    <div class="big reveal d1">173<span>B+</span></div>
+    <p class="lede reveal d2" data-en="Thousands of before &amp; after transformations, shared every week. See the work before you book.">Her hafta paylaşılan binlerce öncesi &amp; sonrası dönüşüm. Randevu almadan önce işleri görün.</p>
+    <div style="margin-top:28px" class="reveal d2"><a class="btn btn-dark" href="https://instagram.com/danyeltatlici__hairdresser" target="_blank" rel="noopener">@danyeltatlici__hairdresser</a></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="pad" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal" data-en="Booking">Rezervasyon</span>
+      <h2 class="stitle reveal d1" data-en="Book your <em>appointment</em>">Randevunuzu <em>alın</em></h2>
+    </div>
+    <div class="cgrid reveal d1">
+      <div class="cinfo">
+        <div class="row">
+          <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1 4.2 2 2 0 0 1 3 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L7 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7A2 2 0 0 1 21 16.9Z"/></svg></span>
+          <div><b>0548 887 57 47</b><span data-en="Reservations &amp; information">Rezervasyon &amp; bilgi</span></div>
+        </div>
+        <div class="row">
+          <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor"/></svg></span>
+          <div><b>@danyeltatlici__hairdresser</b><span data-en="173B+ followers">173B+ takipçi</span></div>
+        </div>
+        <div class="row">
+          <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg></span>
+          <div><b>Facebook</b><span data-en="Danyel Tatlıcı">Danyel Tatlıcı</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-champ" href="https://wa.me/905488875747" target="_blank" rel="noopener" data-en="WhatsApp">WhatsApp'tan Yaz</a>
+          <a class="btn btn-line" href="https://instagram.com/danyeltatlici__hairdresser" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="cside">
+        <div class="mono" data-en="Ready for<br><em>a change?</em>">Değişime<br><em>hazır mısınız?</em></div>
+        <p data-en="Send a message on WhatsApp and let's find the right look for you.">WhatsApp'tan yazın, size en çok yakışanı birlikte bulalım.</p>
+        <div><a class="btn btn-ghost" href="https://wa.me/905488875747" target="_blank" rel="noopener" data-en="Message Now">Hemen Yaz</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><b>DANYEL TATLICI</b><i>Hairdresser</i></a>
+    <div class="fnav">
+      <a href="#services" data-en="Services">Hizmetler</a><a href="#signature" data-en="Signature">İmza</a><a href="#dubai">Dubai</a><a href="#contact" data-en="Booking">Rezervasyon</a>
+    </div>
+    <small data-en="© 2026 Danyel Tatlıcı Hairdresser · Hair Design &amp; Micro Link Specialist">© 2026 Danyel Tatlıcı Hairdresser · Saç Tasarım &amp; Mikro Kaynak Uzmanı</small>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/905488875747" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.3.6 4.5 1.8 6.4L3 29l7.3-2.2c1.8 1 3.8 1.5 5.7 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3Zm0 22.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.3 1.3 1.3-4.2-.3-.4a10 10 0 0 1-1.6-5.3C5.7 9.8 10.3 5.3 16 5.3S26.3 9.8 26.3 15.5 21.7 25.7 16 25.7Zm5.7-7.7c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8.3 8.3 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4l-.6-.3Z"/></svg>
+</a>
+
+<script>
+  const head=document.getElementById('head');
+  addEventListener('scroll',()=>head.classList.toggle('scrolled',scrollY>40));
+  const nav=document.getElementById('nav'),tog=document.getElementById('navtoggle');
+  tog.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.addEventListener('click',e=>{if(e.target.tagName==='A')nav.classList.remove('open')});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
+  const i18n=document.querySelectorAll('[data-en]');
+  function setLang(l){
+    i18n.forEach(el=>{if(!el.dataset.tr)el.dataset.tr=el.innerHTML;el.innerHTML=(l==='en')?el.dataset.en:el.dataset.tr;});
+    document.documentElement.lang=l;
+    try{localStorage.setItem('danyel-lang',l)}catch(e){}
+    document.querySelectorAll('.langbtn').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+  }
+  document.querySelectorAll('.langbtn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
+  let s='tr';try{s=localStorage.getItem('danyel-lang')||'tr'}catch(e){}
+  if(s==='en')setLang('en');
+</script>
+</body>
+</html>
